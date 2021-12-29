@@ -5,7 +5,21 @@
   </div>
   <router-view />
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
 
+export default defineComponent({
+  name: "App",
+
+  props: {
+    msg: String,
+  },
+  created() {
+    this.$route;
+    this.$oneAuth;
+  },
+});
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
