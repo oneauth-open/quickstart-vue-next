@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const path = require("path");
 module.exports = {
   devServer: {
     proxy: {
@@ -16,6 +17,7 @@ module.exports = {
       .exclude.add(/sdk-core/)
       .add(/sdk-vue-next/)
       .end();
+    config.resolve.alias.set("vue", path.resolve("./node_modules/vue"));
   },
   configureWebpack: (config) => {
     config.plugins.push(new BundleAnalyzerPlugin());

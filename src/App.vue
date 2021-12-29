@@ -1,5 +1,6 @@
 <template>
   <div id="nav">
+    <button @click="login">login</button><br />
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
@@ -14,9 +15,10 @@ export default defineComponent({
   props: {
     msg: String,
   },
-  created() {
-    this.$route;
-    this.$oneAuth;
+  methods: {
+    login() {
+      this.$oneAuth.login();
+    },
   },
 });
 </script>
