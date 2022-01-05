@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
-import { LoginCallback, navigationGuard } from "oneauth-sdk-vue-next";
+import { LoginCallback, navigationGuard } from "@oneauth/sdk-vue-next";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
