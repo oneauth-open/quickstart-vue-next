@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@oneauth/sdk-core": "^0.0.1",
-    "@oneauth/sdk-vue-next": "^0.0.2",
+    "@oneauth/sdk-vue-next": "^0.0.3",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
